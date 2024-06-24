@@ -49,7 +49,7 @@ header{
 }
 
 .nav-list a:hover{
-    border-bottom: 2px solid #88898C;
+    border-bottom: 2px solid #BFBFBF;
 }
 
 #menu-icon{
@@ -73,7 +73,7 @@ header{
     width: 100%;
     min-height: 100vh;
     background: rgb(242,48,48);
-    background: linear-gradient(245.59deg, #595959 0%, #262626 30%, #0D0D0D 75%);
+    background: linear-gradient(245.59deg, #88898C 0%, #6F7073 30%, #262626 55%);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,7 +111,7 @@ section{
     width: 400px;
     height: auto;
     border-radius: 500px;
-    border: solid 4px #88898C;
+    border: solid 4px #BFBFBF;
     margin: 10% 0 0 10%;
     transition: all 4s linear;
 }
@@ -125,20 +125,59 @@ section{
     font-family: "Roboto Mono", monospace;
     display: inline-block;
     padding: 10px 20px;
-    background-color:#595959 ;
+    background-color:#595759 ;
     border: solid 1px transparent;
     padding: 15px 30px;
     line-height: 1.4;
     font-size: 14px;
     font-weight: 500;
     border-radius: 20px;
-    border: solid 1px #F2F2F2;
+    border: solid 1px #BFBFBF;
     text-transform: uppercase;
     transition: all .5s ease;
 }
 
 .hero-text a:hover{
     background-color: transparent;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #BFBFBF;
     transform: translateX(8px);
+}
+
+.icons{
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+.icons i:hover{
+    color: #88898C;
+    transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #565759;
+    border-radius: 30px;
+    transition: all .8s ease;
+    color: #BFBFBF;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
 }
