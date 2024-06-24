@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* font-family: "Roboto Mono", monospace; */
+/*  font-family: "Abel", sans-serif;*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo{
+    font-family: "Abel", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.nav .nav-list{
+    display: flex;    
+}
+
+.nav-list a{
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.nav-list a:hover{
+    border-bottom: 2px solid #88898C;
+}
+
+#menu-icon{
+    display: none;
+}
+#menu-icon{
+    font-size: 26px;
+    z-index: 101;
+    cursor: pointer;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon-active{
+    display: none;
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(242,48,48);
+    background: linear-gradient(245.59deg, #595959 0%, #262626 30%, #0D0D0D 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 8%;
+}
+
+.hero-text h1{
+    font-family: "Abel", sans-serif;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.hero-text h5{
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero-text p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+
+.hero-img img{
+    width: 400px;
+    height: auto;
+    border-radius: 500px;
+    border: solid 4px #88898C;
+    margin: 10% 0 0 10%;
+    transition: all 4s linear;
+}
+
+.hero-img img:hover{
+    width: 450px;
+    opacity: 0.6;
+}
+
+.hero-text a{
+    font-family: "Roboto Mono", monospace;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#595959 ;
+    border: solid 1px transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid #F2F2F2;
+    transform: translateX(8px);
+}
