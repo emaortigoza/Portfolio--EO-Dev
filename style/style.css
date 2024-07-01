@@ -182,12 +182,14 @@ section{
 }
 
 .sobreMi{
+    align-items: center;
     width: 80vw;
     margin: auto;
     padding: auto;
     background-color: #5957591e;
     margin-bottom: 20px;
     transition: all 5s ease;
+    text-align: center;
 }
 .sobreMi:hover{
     transform: translateY(-8px);
@@ -205,6 +207,7 @@ section{
 }
 
 .portfolio{
+    text-align: center;
     width: 80vw;
     margin: auto;
     background-color: #5957591e;
@@ -223,12 +226,71 @@ article{
 }
 
 .card-porfolio{
+    width: 18rem;
     margin: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: #88898C;
-    text-align: center;
+    font-family:"Roboto Mono", monospace; ;
+}
+.card-porfolio figure{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
+.card-porfolio figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.card-porfolio figure .card-text{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #000000af;
+    color: white;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.card-text h3{
+    font-family: "Abel", sans-serif;
+}
+.card-text p{
+    font-family: "Roboto Mono", monospace; 
+}
+.card-text i{
+    font-size: 20px;
+}
+
+.card-porfolio figure:hover > .card-text{
+    opacity: 1;
+    visibility: visible;
+}
+.card-porfolio figure:hover > .card-text h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.card-porfolio figure:hover > img{
+    transform: scale(1.3);
+}
+.card-porfolio figure .card-text h3{
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.card-porfolio figure .card-text p{
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
 }
 
 
