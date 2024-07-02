@@ -233,7 +233,7 @@ article{
 .card-porfolio figure{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 200px;
     overflow: hidden;
     border-radius: 6px;
     cursor: pointer;
@@ -273,8 +273,8 @@ article{
     visibility: visible;
 }
 .card-porfolio figure:hover > .card-text h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .card-porfolio figure:hover > img{
