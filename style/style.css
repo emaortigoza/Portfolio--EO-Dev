@@ -10,7 +10,7 @@
     font-family: "Prompt", sans-serif;
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: #f4f4f4;
 }
 
 body{
@@ -65,7 +65,7 @@ header{
 }
 
 main{
-    background: linear-gradient(245.59deg, #88898C 0%, #6F7073 30%, #262626 50%);
+    background: #0c0a1d;
 }
 
 .hero{
@@ -91,11 +91,27 @@ section{
     margin: 0 0 30px;
 }
 
-.hero-text h5{
+.hero-text span{
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 15px;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate ;
+    overflow: hidden;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%{
+        border: transparent;
+    }
 }
 
 .hero-text p{
@@ -109,15 +125,9 @@ section{
 .hero-img img{
     width: 400px;
     height: auto;
-    border-radius: 500px;
+    border-radius: 200px;
     border: solid 4px #BFBFBF;
     margin: 10% 0 0 10%;
-    transition: all 4s linear;
-}
-
-.hero-img img:hover{
-    width: 450px;
-    opacity: 0.6;
 }
 
 .hero-text a{
@@ -295,9 +305,34 @@ article{
 
 
 .contacto{
+    font-family: "Roboto Mono", monospace;
     width: 80vw;
+    min-height: 60vh;
     margin: auto;
     background-color: #5957591e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    container-name: form;
+    container-type: inline-size;
+}
+.form__form{
+    flex: 1;
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+}
+.form__input-container :is(input, textarea){
+    font-family: "Abel", sans-serif;;
+    width: 100%;
+    padding: 9px 6px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #ad9a9ac7;
+    margin-bottom: 10px;
 }
 
 .contacto h2{
@@ -306,6 +341,74 @@ article{
     font-family: "Abel", sans-serif;;
 }
 
+.form__input-container input,  .form__input-container textarea{
+
+    border-bottom: 1px solid var(--greyLight);
+    color: rgb(129, 129, 129);
+}
+.form__input-container input,  .form__input-container textarea:focus-visible{
+    outline: none;
+}
+.form__input-container label{
+    font-family: "Abel", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.form__input-container textarea{
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+
+.form__input-container input[type="submit"]{
+    background-color: white;
+    color: #0c0a1d;
+    font-weight: 600;
+    border: 1px solid var(--greyLight);
+    border-radius: 2px;
+    padding: 12px;
+    
+}
+
+
+
+/*------------- contacto queries*/
+
+@container form (min-width: 600px){
+.form__form{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "nombreApellido Telefono"
+        "ciudad email"
+        "mensaje mensaje"
+        "submit submit"
+    ;
+    gap: 12px;
+}
+.form__input-container:first-child{
+    grid-area: nombreApellido;
+}
+.form__input-container:nth-child(2){
+    grid-area: Telefono;
+}
+.form__input-container:nth-child(3){
+    grid-area: ciudad;
+}
+.form__input-container:nth-child(4){
+    grid-area: email;
+}
+.form__input-container:nth-child(5){
+    grid-area: mensaje;
+}
+.form__input-container:last-child{
+    grid-area: submit;
+}
+/* .form__input-container input[type="submit"]{
+    width: 150px;
+    margin-left: 210px;
+} */
+}
 
 
 

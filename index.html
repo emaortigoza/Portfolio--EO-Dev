@@ -29,13 +29,13 @@
 <main>
     <section class="hero">
         <div class="hero-text">
-            <h5>Frontend Developer</h5>
+            <span>Frontend Developer</span>
             <h1>Emanuel Ortigoza</h1>
             <p>Empece en el desarrollo web como un hobbie y hoy es una pasion que me fortalece dia a dia</p>
             <a href="#" class="icon-cv"><i class="ri-file-line"></i> CV</a>
         </div>
         <div class="hero-img">
-            <img src="./assets/img/1688476559109.jfif" alt="EO foto">
+            <img src="./assets/img/Emacv.jpeg" alt="EO foto">
         </div>
         
     </section>
@@ -50,8 +50,25 @@
     </div>
    
     <section class="portfolio">
-        <h2>Mis trabajos</h2>
+        <h2>Portfolio</h2>
        <article>
+        <div class="card-porfolio">
+            <a href="https://emaortigoza.github.io/ManglarArquitectura/">
+                <figure>
+                  <img src="./assets/img/Manglar-Arquitectura.png" alt="JoyasDobleT">
+                <div class="card-text">
+                    <h3>Arquitectura Manglar</h3>
+                    <p>Proyecto Estudio de Arquitectura</p>
+                    <br>
+                    <i class="ri-html5-line"></i>
+                    <i class="ri-css3-line"></i>
+                    <i class="ri-javascript-line"></i>
+                    
+                </div>   
+                </figure>
+            </a>
+           
+        </div>
         <div class="card-porfolio">
             <a href="https://emaortigoza.github.io/Joyas-Doble-t-2024/">
                 <figure>
@@ -108,14 +125,32 @@
         <p>Desarrollador frontend con experiencia en HTML, CSS, JavaScript y frameworks como React js <br>
         Me apasiona crear interfaces de usuario intuitivas y atractivas. <br>
         </p>
-        <p>Realice muchos cursos donde fui aprendiendo distintas tecnologias y tecnicas. Estudie Tecnicatura en programacion en la UTN. y actualmente me encuentro estudiando la carrera de professional Developer en la plataforma de DigitalHouse </p>
+        <p>Realice muchos cursos donde fui aprendiendo distintas tecnologias y tecnicas. Estudio Tecnicatura en programacion en la UTN. y actualmente me encuentro estudiando la carrera de professional Developer en la plataforma de DigitalHouse </p>
         <br>
         
     </section>
     <section class="contacto">
-        <h2 class="contacto">
-            Contacto
-        </h2>
+        <h2 class="form__title">Contacto</h2>
+        <form action="https://formspree.io/f/mvgoonlg" method="post" class="form__form">
+            <div class="form__input-container">
+              <label>Nombre y Apellido
+                <input type="text" placeholder="Nombre y Apellido" name="Nombre y Apellido" required>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <label>E-mail
+                <input type="email" placeholder="yourmail@example.com" name="email" required>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <label>Mansaje
+                <textarea name="Mensaje" id="" placeholder="Su Mensaje" required></textarea>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input type="submit" class="btn-enviar">
+            </div>
+          </form>
     </section>
     <br>
 </main>
