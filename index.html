@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EO Devs</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">EO Dev.</a>
 
-        <input type="checkbox" name="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon-action"><div class='bx bx-menu' id="menu-icon"></div></label>
+        <div class='bx bx-menu' id="menu-icon"></div>
         
-
-        <nav class="nav">
+        
             <ul class="nav-list">
                 <li><a href="">Home</a></li>
-                <li><a href="">Sobre mi</a></li>
                 <li><a href="">Portfolio</a></li>
+                <li><a href="">Sobre mi</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
-        </nav>
+    
         
     </header>
 <main>
     <section class="hero">
         <div class="hero-text">
-            <span>Frontend Developer</span>
-            <h1>Emanuel Ortigoza</h1>
-            <p>Empece en el desarrollo web como un hobbie y hoy es una pasion que me fortalece dia a dia</p>
+            <h1 class="animate__animated animate__fadeInRight">Emanuel Ortigoza</h1>
+            <p><span>Professional Developer</span></p>
             <a href="#" class="icon-cv"><i class="ri-file-line"></i> CV</a>
         </div>
-        <div class="hero-img">
+        <div class="hero-img animate__animated animate__fadeInRight">
             <img src="./assets/img/Emacv.jpeg" alt="EO foto">
         </div>
         
@@ -72,10 +71,10 @@
         <div class="card-porfolio">
             <a href="https://emaortigoza.github.io/Joyas-Doble-t-2024/">
                 <figure>
-                  <img src="./assets/img/JoyasDobleT.png" alt="JoyasDobleT">
+                  <img src="./assets/img/Screenshot 2024-11-04 at 15-15-44 API clima.png" alt="JoyasDobleT">
                 <div class="card-text">
-                    <h3>Joyas Doble T</h3>
-                    <p>Proyecto de pagina Joyeria</p>
+                    <h3>API clima</h3>
+                    <p>Proyecto consulta estado del clima</p>
                     <br>
                     <i class="ri-html5-line"></i>
                     <i class="ri-css3-line"></i>
@@ -154,6 +153,10 @@
     </section>
     <br>
 </main>
-    
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
