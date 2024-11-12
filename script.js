@@ -14,6 +14,8 @@ const sr = ScrollReveal ({
 }) 
 
 sr.reveal('.hero-text', {delay: 200, origin: 'top'})
-sr.reveal('.hero-img', {delay: 450, origin: 'top'})
+sr.reveal('.hero-img', {delay: 450})
 sr.reveal('.icons', {delay: 500, origin: 'left'})
-sr.reveal('.scroll-down', {delay: 450, origin: 'right'})
+sr.reveal('.portfolio__project',{delay:150})
+sr.reveal('.sobreMi',{delay:150})
+sr.reveal('.contacto',{delay:250})
