@@ -307,6 +307,7 @@ section{
 
     border-bottom: 1px solid var(--greyLight);
     color: rgb(129, 129, 129);
+    background-color: #5957591e;
 }
 .form__input-container input,  .form__input-container textarea:focus-visible{
     outline: none;
@@ -324,13 +325,13 @@ section{
 
 
 .form__input-container input[type="submit"]{
-    background-color: white;
-    color: #0c0a1d;
-    font-weight: 600;
+    background-color: #5957591e;
+    color: #fff9;
+    font-weight: 800;
     border: 1px solid var(--greyLight);
     border-radius: 2px;
     padding: 12px;
-    
+    cursor: pointer;
 }
 
 
