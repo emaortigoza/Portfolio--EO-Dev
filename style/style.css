@@ -262,7 +262,7 @@ section{
     background-image: linear-gradient(#0009, #0009), url("../assets/img/Screenshot\ 2024-11-04\ at\ 15-15-44\ API\ clima.png");
 }
 .portfolio__project:nth-child(4){
-    background-image: linear-gradient(#0009, #0009), url("../assets/img/sancristobalviajes.png");
+    background-image: linear-gradient(#0009, #0009), url("../assets/img/SocialNetwork.png");
 }
 .portfolio__project:nth-child(5){
     background-image: linear-gradient(#0009, #0009), url("../assets/img/sancristobalviajes.png");
@@ -474,4 +474,8 @@ section{
     .nav-list.open{
         right: 0;
     }
+}
+
+#trucazo{
+    opacity: 0;
 }
