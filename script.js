@@ -34,3 +34,4 @@ function handleSubmit(event){
     buttonMailTo.setAttribute('href', `mailto:info@eortigoza.com?subject=nombre ${form.get('Nombre y Apellido')} correo ${form.get('email')}&body=${form.get('Mensaje')}`)
     buttonMailTo.click()
 }
+
