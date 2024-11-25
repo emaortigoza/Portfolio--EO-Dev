@@ -94,7 +94,7 @@ section{
 
 .hero-text span{
     font-family: "Roboto Mono", monospace;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 400;
     margin-bottom: 15px;
     display: block;
@@ -117,7 +117,7 @@ section{
 
 .hero-text p{
     font-family: "Roboto Mono", monospace;
-    font-size: 80%;
+    font-size: 20px;
     margin-bottom: 40px;
     line-height: 1.9;
 }
@@ -152,9 +152,7 @@ section{
     border: 1px solid #BFBFBF;
     transform: translateX(8px);
 }
-.hero-text p{
-    font-size: 14px;
-}
+
 .icons{
     position: absolute;
     top: 50vh;
