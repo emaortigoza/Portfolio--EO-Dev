@@ -117,7 +117,7 @@ section{
 
 .hero-text p{
     font-family: "Roboto Mono", monospace;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 40px;
     line-height: 1.9;
 }
@@ -435,6 +435,12 @@ section{
     .hero-text{
         text-align: center;
         padding-top: 100px;
+    }
+    .hero-text span{
+        font-size: 20px;
+    }
+    .hero-text p{
+        font-size: 16px;
     }
     .hero-img{
         margin: 0;
