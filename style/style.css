@@ -118,8 +118,9 @@ section{
 .hero-text p{
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
+    text-align: justify;
     margin-bottom: 40px;
-    line-height: 1.9;
+    line-height: 1.2;
 }
 
 
@@ -202,12 +203,10 @@ section{
     padding: auto;
     background-color: #5957591e;
     margin-bottom: 20px;
-    transition: all 5s ease;
+
     text-align: center;
 }
-.sobreMi:hover{
-    transform: translateY(-8px);
-}
+
 .sobreMi h2{
     padding: 10px;
     margin-top:20px ;
@@ -216,6 +215,7 @@ section{
 .sobreMi p{
     font-family: "Roboto Mono", monospace;
     font-size: 80%;
+    text-align: justify;
     margin-bottom: 40px;
     line-height: 1.9;
 }
