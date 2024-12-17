@@ -271,7 +271,7 @@ section{
     background-image: linear-gradient(#0009, #0009), url("../assets/img/Screenshot\ 2024-11-21\ at\ 14-31-19\ La\ Tienda\ Del\ Rey.png");
 }
 .portfolio__project:nth-child(3){
-    background-image: linear-gradient(#0009, #0009), url("../assets/img/Screenshot\ 2024-11-04\ at\ 15-15-44\ API\ clima.png");
+    background-image: linear-gradient(#0009, #0009), url("../assets/img/Clima\ App.png");
 }
 .portfolio__project:nth-child(4){
     background-image: linear-gradient(#0009, #0009), url("../assets/img/SocialNetwork.png");
