@@ -280,7 +280,7 @@ section{
     background-image: linear-gradient(#0009, #0009), url("../assets/img/sancristobalviajes.png");
 }
 .portfolio__project:nth-child(6){
-    background-image: linear-gradient(#0009, #0009), url("../assets/img/sancristobalviajes.png");
+    background-image: linear-gradient(#0009, #0009), url("../assets/img/MovieApp.png");
 }
 .portfolio__project:hover{
     opacity: 0.74;
